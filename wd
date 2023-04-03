@@ -1,0 +1,23 @@
+import keyboard
+import configparser
+import random
+import pyautogui as pg
+import webbrowser as web
+
+config = configparser.ConfigParser()
+config.read("config.ini")
+
+random1 = config.get("r1" , "r")
+
+def spam1():
+    while True:
+        
+        in1 = input("help = Command : ")
+
+        if in1=="help":
+            print("r1 = code name")
+            
+
+        if keyboard.is_pressed('alt+f1'):
+            # ถ้ากด q ให้ออกจาก loop
+            break
