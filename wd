@@ -3,15 +3,20 @@ import configparser
 import random
 import pyautogui as pg
 import webbrowser as web
+from tkinter import *
 
 config = configparser.ConfigParser()
 config.read("config.ini")
 
 random1 = config.get("r1" , "r")
+
+root = Tk()
+root.mainloop()
+
 """
 def spam1():
-   while True:
-       
+    while True:
+        
         in1 = input("help = Command : ")
 
         if in1=="help":
